@@ -330,6 +330,15 @@
     };
   };
 
+  g4h-testagent-dev = {
+    module = ./uae/testagent/g4h-dev/configuration.nix;
+    system = "x86_64-linux";
+    machine = {
+      ip = "10.44.0.10";
+      publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEMJgpvyU7j/XQ1OT596m6kKvkK4EGKiwhi6liPy5rxD";
+    };
+  };
+
   uae-azureci-registry = {
     module = ./uae/azureci/registry/configuration.nix;
     system = "x86_64-linux";

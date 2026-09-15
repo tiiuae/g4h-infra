@@ -9,6 +9,7 @@ keys:
   - &fayad age18t3gss4l6l629rd8s93eh3ctycu9vjnsftehy38c8tstu2gqycxs64t4sw
   - &ktu age1w0ymdztkr043a9gnxrx95k77ek5h58zza5q7jz9gqm63gz2chgcskkfwzt
   - &pavelf age1ndka4hh9dadckkk7y35zz98p2e0ykxpaewaw5eukezxl8sus7dsqcu0ydk
+  - &eyad age1kdyn9h9nwflaavmlc23xkul05tfam3dxynm0rz8elh220dx8xywqucv5jx
 
   # hosts
   - &testagent-prod age12nrv5a9rk9vqvx2tqvghn4kt9ps6gdszmmynhjegl2ewefkh03fsexuy9y
@@ -46,6 +47,7 @@ keys:
   - &uae-testagent2-prod age1gqc3zuzve3988wx6qasqazfxt0tkq6mtjg2932d8mv6plage6yes0xscud
   - &uae-azureci-registry age1p07c3w942hfu5ye3t4cuvz29n8erl9nqdezre6u5gxvxwg270veqvl0vm7
   - &uae-azureci-dev age1hxxxvlrwcrvjw7ux7g8seuw2yt7zw09gler9z70070aycknqy3sq9aq5rg
+  - &g4h-testagent-dev age15pudyq9dd84aqw5eh6d0ljw372tddnus5yf5jvyj8ek95zfwpfss5rkq62
 
 creation_rules:
   - path_regex: hosts/testagent/prod/secrets.yaml$
@@ -340,6 +342,22 @@ creation_rules:
     key_groups:
     - age:
       - *uae-testagent2-prod
+      - *jrautiola
+      - *fayad
+      - *hrosten
+  - path_regex: hosts/uae/testagent/g4h-dev/secrets.yaml$
+    key_groups:
+    - age:
+      - *g4h-testagent-dev
+      - *eyad
+      - *jrautiola
+      - *fayad
+      - *hrosten
+  - path_regex: hosts/uae/testagent/g4h-dev/credentials.yaml$
+    key_groups:
+    - age:
+      - *g4h-testagent-dev
+      - *eyad
       - *jrautiola
       - *fayad
       - *hrosten

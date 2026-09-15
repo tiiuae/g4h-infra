@@ -107,6 +107,7 @@
         testagent-release = machines.testagent-release.publicKey;
         uae-testagent-prod = machines.uae-testagent-prod.publicKey;
         uae-testagent2-prod = machines.uae-testagent2-prod.publicKey;
+        g4h-testagent-dev = machines.g4h-testagent-dev.publicKey;
       };
     };
   };
