@@ -5,6 +5,7 @@
   inputs,
   modulesPath,
   lib,
+  self,
   ...
 }:
 {
@@ -17,6 +18,7 @@
     ../../../hetzci/signing.nix
     (modulesPath + "/profiles/qemu-guest.nix")
     inputs.disko.nixosModules.disko
+    self.nixosModules.user-eyad
   ];
 
   # this server has been initialized with 25.11 with nixos-anywhere

@@ -372,6 +372,7 @@ creation_rules:
     key_groups:
     - age:
       - *uae-azureci-dev
+      - *eyad
       - *jrautiola
       - *fayad
       - *hrosten
